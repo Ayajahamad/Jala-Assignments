@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+
+<body>
+    <button id="myButton">Click me!</button>
+    <script>
+        // Get a reference to the button element
+        const myButton = document.getElementById('myButton');
+
+        // Add an event listener to the button
+        myButton.addEventListener('click', function () {
+            // Get the current date and time
+            const now = new Date();
+
+            // Display the current date and time
+            alert(now.toLocaleString());
+        });
+
+    </script>
+</body>
+
+</html>

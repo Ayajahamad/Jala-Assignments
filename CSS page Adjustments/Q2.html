@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Display</title>
+    <style>
+    .visible {
+         visibility: visible;
+     }
+
+    .hidden {
+         visibility: hidden;
+    }
+
+    .collapsed {
+         visibility: collapse;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .inline {
+        display: inline;
+     }
+
+    .block {
+        display: block;
+    }
+
+    .contents {
+        display: contents;
+    }
+
+    .list-item {
+        display: list-item;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Visibility And Display properties</h1>
+<div class="visible">This element is visible.</div>
+<div class="hidden">This element is hidden.</div>
+<table>
+  <tr class="collapsed">
+    <td>Table row 1, cell 1</td>
+    <td>Table row 1, cell 2</td>
+  </tr>
+  <tr>
+    <td>Table row 2, cell 1</td>
+    <td class="none">Table row 2, cell 2</td>
+  </tr>
+</table>
+<span class="inline">This element is displayed inline.</span>
+<div class="block">This element is displayed as a block-level element.</div>
+<div class="contents">
+  <p>Child element 1</p>
+  <p>Child element 2</p>
+</div>
+<ul>
+  <li class="list-item">List item 1</li>
+  <li>List item 2</li>
+</ul>
+</body>
+</html>

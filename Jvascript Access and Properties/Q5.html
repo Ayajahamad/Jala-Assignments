@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.email = "john@example.com"; // Add an email property to the Person function
+
+        const john = new Person("John", 30);
+        //john.email = "john@example.com";
+
+        console.log(john.name); // Output: "John"
+        console.log(john.age); // Output: 30
+        console.log(john.email); // Output: "john@example.com"
+    </script>
+</body>
+
+</html>

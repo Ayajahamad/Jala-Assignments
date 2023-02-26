@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="myInput">Enter some text:</label>
+        <input type="text" id="myInput">
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <script>
+        // Get references to the form elements
+        const myForm = document.querySelector('form');
+        const myInput = document.getElementById('myInput');
+        const submitButton = document.getElementById('submitButton');
+
+        // Add an event listener to the form submit event
+        myForm.addEventListener('submit', function (event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            // Check if the input is empty
+            if (myInput.value.trim() === '') {
+                // If it's empty, show an error message and return false
+                alert('Please enter some text.');
+                return false;
+            }
+
+            // If the input is not empty, submit the form
+            alert('Form submitted successfully!');
+            return true;
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Fruits</title>
+  </head>
+  <body>
+    <h1>Fruit List</h1>
+    <ul id="fruit-list">
+      <li>Orange</li>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+    <button onclick="sortFruits()">Sort Descending</button>
+    <script>
+      function sortFruits() {
+        const fruits = ["Orange", "Apple", "Banana", "Cherry"];
+        fruits.sort().reverse();
+        const fruitList = document.getElementById("fruit-list");
+        for (let i = 0; i < fruits.length; i++) {
+          const fruit = fruits[i];
+          const listItem = document.createElement("li");
+          listItem.innerText = fruit;
+          fruitList.appendChild(listItem);
+        }
+      }
+    </script>
+</body>
+</html>

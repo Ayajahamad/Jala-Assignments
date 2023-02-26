@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set a background image with a specific size */
+      body {
+        background-image: url("bg1.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
+
+      /* Add a second background image with an adjustable size */
+      .section {
+        background-image: url("bg2.jpg"), url("bg4.jpg");
+        background-size: 50% auto, cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <h1>This section has two background images</h1>
+      <p>The first image is set to be 50% of the section's width and the second image is set to cover the entire section.</p>
+    </div>
+  </body>
+</html>

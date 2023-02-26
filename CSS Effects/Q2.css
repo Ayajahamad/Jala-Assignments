@@ -1,0 +1,43 @@
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination .page {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+  }
+  
+  .pagination .active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination:hover .page:not(.active) {
+    background-color: #ddd;
+  }
+  
+  /* CSS animation */
+  .pagination .page {
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    animation-delay: 5s;
+  }
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

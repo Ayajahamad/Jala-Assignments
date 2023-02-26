@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Obj</title>
+</head>
+
+<body>
+    <script>
+        // Creating a JSON object
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            age: 30,
+            address: {
+                street: '123 Main St',
+                city: 'Anytown',
+                state: 'CA',
+                zip: '12345'
+            }
+        };
+        console.log(person);
+        //In json obj We can easily convert it into String
+        let mystr=JSON.stringify(person)
+        console.log(person)
+        // Accessing the JSON object using dot notation
+        console.log(person.firstName); // Output: John
+        console.log(person.lastName); // Output: Doe
+        console.log(person.age); // Output: 30
+        console.log(person.address.street); // Output: 123 Main St
+        console.log(person.address.city); // Output: Anytown
+        console.log(person.address.state); // Output: CA
+        console.log(person.address.zip); // Output: 12345
+
+    </script>
+</body>
+
+</html>

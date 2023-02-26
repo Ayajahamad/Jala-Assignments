@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Mode</title>
+</head>
+
+<body>
+    <h3 id="demo">In strict mode, if you try to assign a value to a variable that has not been declared, you'll get a
+        'ReferenceError' instead of silently creating a global variable. This is because strict mode requires all
+        variables to be declared before they are used.</h3>
+    <script>
+        /*
+        "use strict"
+        x=4;
+        console.log(x);
+        */
+        "use strict";
+
+        function foo() {
+            x = 10; // need to use "var": var x=10
+            console.log(x);
+        }
+
+        foo();
+
+    </script>
+</body>
+
+</html>

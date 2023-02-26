@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter and Setters</title>
+</head>
+
+<body>
+    <script>
+        class Counter {
+            constructor() {
+                this._count = 0;
+            }
+
+            get count() {
+                return this._count;
+            }
+
+            set count(value) {
+                if (value >= 0) {
+                    this._count = value;
+                }
+            }
+
+            increment() {
+                this._count++;
+            }
+
+            decrement() {
+                if (this._count > 0) {
+                    this._count--;
+                }
+            }
+        }
+
+        // Example usage:
+        const counter = new Counter();
+        console.log(counter.count); // Output: 0
+
+        counter.count = 5;
+        console.log(counter.count); // Output: 5
+
+        counter.increment();
+        console.log(counter.count); // Output: 6
+
+        counter.decrement();
+        console.log(counter.count); // Output: 5
+
+        counter.count = -1; // Invalid value, count will remain at 5
+        console.log(counter.count); // Output: 5
+
+    </script>
+</body>
+
+</html>

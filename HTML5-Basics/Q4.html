@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pseudo-classes and Pseudo-elements Example</title>
+  <style>
+    /* Style the heading element */
+    h1 {
+      font-size: 36px;
+      color: navy;
+      margin-bottom: 20px;
+    }
+
+    /* Style the links */
+    a {
+      color: red;
+      text-decoration: none;
+      border-bottom: 1px dotted red;
+    }
+
+    /* Style the links when they are hovered over */
+    a:hover {
+      color: blue;
+      border-bottom-style: solid;
+    }
+
+    /* Style the first letter of the paragraph */
+    p:first-letter {
+      font-size: 48px;
+      color: green;
+      float: left;
+      margin-right: 10px;
+    }
+
+    /* Style the first line of the paragraph */
+    p:first-line {
+      font-weight: bold;
+    }
+
+    /* Style the last line of the paragraph */
+    p::after {
+      content: "...";
+    }
+
+    /* Style the first child of the unordered list */
+    ul li:first-child {
+      font-style: italic;
+    }
+
+    /* Style the last child of the unordered list */
+    ul li:last-child {
+      font-weight: bold;
+    }
+
+    /* Style every other child of the unordered list */
+    ul li:nth-child(odd) {
+      background-color: lightgray;
+    }
+
+    /* Style every third child of the unordered list */
+    ul li:nth-child(3n) {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-classes and Pseudo-elements Example</h1>
+  <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. Sed luctus mi ipsum, eget dignissim quam fringilla vitae. Sed ultrices eget ipsum vel mattis. Praesent eleifend gravida sapien, ac cursus turpis ultrices eu. <a href="#">Nullam tempus odio</a> sit amet sem dapibus, vel mattis odio pharetra. In auctor malesuada metus, ut vulputate arcu facilisis vitae. Sed posuere euismod malesuada. Nam bibendum risus in turpis malesuada, vel eleifend nulla bibendum. Aliquam quis velit ac sapien efficitur bibendum. Fusce vestibulum mi vel est suscipit interdum.</p>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+  <p>Sed ut dui ante. In eget felis felis. Nulla faucibus mi nec tellus gravida, sed rhoncus tellus elementum. Fusce interdum, lacus sit amet molestie vulputate, orci velit sodales est, a lacinia dolor mi nec ipsum. Donec vel ante ullamcorper, maximus lacus id, finibus nulla. Nulla facilisi. Etiam rutrum massa in sem fermentum, sit amet ultrices magna tincidunt. Pellentesque vel bibendum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sodales nec mauris nec feugiat.</p>
+</body>
+</html>

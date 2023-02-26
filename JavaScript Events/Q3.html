@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging</title>
+</head>
+
+<body>
+    <p>'console.log()' is a built-in function in JavaScript that writes a message to the console, which is a debugging
+        tool that developers can use to inspect and debug their code. Here are some ways console.log() can be used for
+        debugging</p>
+    <p>
+        Logging variable values: You can use console.log() to log the value of a variable or expression to the console,
+        which can help you understand how your code is working and identify errors. For example:
+    </p>
+    <p>
+        Debugging control flow: You can use console.log() to track the flow of execution through your code, especially
+        when dealing with loops, conditions, or function calls. For example:
+    </p>
+    <p>
+        Testing assumptions: You can use console.log() to test your assumptions about how your code works, and verify
+        that it's behaving as expected. For example:
+    </p>
+    <p>
+        Logging errors: You can use console.log() to log error messages or stack traces to the console when your code
+        encounters an error, which can help you identify and fix the problem. For example:
+    </p>
+    <p>
+        => Overall, console.log() is a powerful tool for debugging JavaScript code, and can help you understand how your
+        code works, identify errors, and test assumptions. However, it's important to remove or comment out any
+        console.log() statements before deploying your code to production, as they can slow down your code and
+        potentially reveal sensitive information to users.
+    </p>
+    <script>
+        //Eg for Logging variable values
+        let x = 5;
+        console.log(x); // logs 5
+        console.log(x + 3); // logs 8
+
+        //Eg for Debugging control flow
+        function multiply(a, b) {
+            console.log('multiply function called');
+            return a * b;
+        }
+
+        let y = 5;
+        if (y > 0) {
+            console.log('x is positive');
+            let result = multiply(y, 3);
+            console.log('result is', result);
+        } else {
+            console.log('y is negative or zero');
+        }
+        //Eg for Testing assumptions
+        let fruits = ['apple', 'banana', 'cherry'];
+        console.log(fruits.length); // logs 3
+        console.log(fruits[0]); // logs 'apple'
+        console.log(fruits[2]); // logs 'cherry'
+        console.log(fruits[3]); // logs undefined
+
+        //Eg for Logging errors
+        try {
+            let result = x + y;
+            console.log(result);
+        } catch (error) {
+            console.log('An error occurred:', error);
+        }
+    </script>
+</body>
+
+</html>

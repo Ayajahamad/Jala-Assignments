@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Objects</title>
+</head>
+<body>
+    <h3>In js 3 Type of Accessor will be there</h3>
+    <p>
+        <h4>1- Dot property Accessor</h4>
+        <h4>2- Square brackets property Accessor</h4>
+        <h4>3- Object destructuring</h4>
+    </p>
+    <script>
+        const person={
+            firstname:"Ayaz",
+            lastname:"Ahamad"
+        }
+        console.log(person.firstname)
+
+        console.log(person['firstname']);
+
+        const{lastname}=person;
+        console.log(lastname)
+    </script>
+</body>
+</html>
